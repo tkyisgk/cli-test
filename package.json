@@ -11,6 +11,7 @@
   "scripts": {
     "start": "node ./packages/create-test-app/lib/cli.js",
     "lint": "eslint --ext \".js,.mjs\" .",
+    "pre-commit": "yarn lint",
     "prepare": "husky install"
   },
   "devDependencies": {
