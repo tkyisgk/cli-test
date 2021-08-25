@@ -5,11 +5,12 @@
   "author": "takuya ishigaki <tky.isgk@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*"
+  "bin": "lib/cli.js",
+  "files": [
+    "lib"
   ],
   "scripts": {
-    "start": "node ./packages/create-test-app/lib/cli.js",
+    "start": "node lib/cli.js",
     "lint": "eslint --ext \".js,.mjs\" .",
     "pre-commit": "yarn lint",
     "prepare": "husky install"
@@ -22,7 +23,12 @@
     "eslint-plugin-import": "^2.24.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "husky": "^7.0.1",
-    "lerna": "^4.0.0"
+    "husky": "^7.0.1"
+  },
+  "dependencies": {
+    "cac": "^6.7.3",
+    "chalk": "^4.1.2",
+    "envinfo": "^7.8.1",
+    "sao": "^1.7.1"
   }
 }
