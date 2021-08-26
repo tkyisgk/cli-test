@@ -5,6 +5,7 @@
   "author": "takuya ishigaki <tky.isgk@gmail.com>",
   "license": "MIT",
   "private": true,
+  "main": "lib/cli.js",
   "bin": "lib/cli.js",
   "files": [
     "lib"
