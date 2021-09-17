@@ -2,5 +2,5 @@
 
 ## 使い方
 ``` bash
-$ npx github:tkyisgk/cli-test create-test-app <my-project>
+$ npx github:tkyisgk/cli-test <my-project>
 ```
